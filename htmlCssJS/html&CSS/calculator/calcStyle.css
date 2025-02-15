@@ -1,0 +1,122 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+.page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "result result result result"
+    "clear clear back div"
+    "n7 n8 n9 mult"
+    "n4 n5 n6 add"
+    "n1 n2 n3 subt"
+    "n0 n0 n0 equal";
+  width: 40%;
+  height: 500px;
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+.button {
+  color: black;
+}
+.result {
+  background-color: black;
+  display: flex;
+  height: 90px;
+  grid-area: result;
+  text-align: right;
+  justify-content: flex-end;
+  font-size: 50px;
+  align-items: center;
+  color: whitesmoke;
+  padding: 2px;
+}
+
+.numbers {
+  padding: 4px;
+  border: 1px black;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  font-size: medium;
+  border: 1px solid black;
+}
+.numbers:hover {
+  background-color: darkgray;
+}
+.operators {
+  padding: 4px;
+  margin: 1px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: orange;
+  font-weight: bold;
+  font-size: medium;
+  border: 2px solid darkblue;
+}
+.operators:hover {
+  background-color: peachpuff;
+}
+.clear {
+  grid-area: clear;
+}
+.back {
+  grid-area: back;
+}
+.n7 {
+  grid-area: n7;
+}
+
+.n8 {
+  grid-area: n8;
+}
+.n9 {
+  grid-area: n9;
+}
+.div {
+  grid-area: div;
+}
+.mult {
+  grid-area: mult;
+}
+.add {
+  grid-area: add;
+}
+.subt {
+  grid-area: subt;
+}
+.total {
+  grid-area: total;
+}
+.n1 {
+  grid-area: n1;
+}
+.n2 {
+  grid-area: n2;
+}
+.n3 {
+  grid-area: n3;
+}
+.n4 {
+  grid-area: n4;
+}
+.n5 {
+  grid-area: n5;
+}
+.n6 {
+  grid-area: n6;
+}
+.n0 {
+  grid-area: n0;
+}
+.total {
+  grid-area: equal;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Cover Page</title>
+
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .page {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "header header header" "nav nav nav" "story-1 story-2 story-3" "story-4 story-5 story-5";
+        width: 90%;
+        box-sizing: border-box;
+      }
+      .page-header {
+        grid-area: header;
+        text-align: center;
+        justify-content: space-around;
+        display: flex;
+      }
+      .page-title {
+        font-family: "Times New Roman";
+        font-weight: lighter;
+        width: 450px;
+        font-style: italic;
+        background-color: antiquewhite;
+        padding: 8px;
+        text-align: center;
+      }
+      .nav-links {
+        display: flex;
+        padding: 30px;
+        border: 2px solid black;
+        justify-content: space-around;
+        list-style: none;
+        grid-area: nav;
+        align-items: center;
+        margin-bottom: 0;
+        box-sizing: border-box;
+      }
+      .section-link {
+        font-family: "Arial";
+        font-size: 30px;
+        font-weight: bold;
+        color: #666;
+        text-decoration: none;
+      }
+      .story {
+        padding: 10px;
+        border: 2px solid black;
+      }
+      .story-1 {
+        grid-area: story-1;
+      }
+      .story-2 {
+        grid-area: story-2;
+      }
+      .story-3 {
+        grid-area: story-3;
+      }
+      .story-4 {
+        grid-area: story-4;
+      }
+      .story-5 {
+        grid-area: story-5;
+      }
+      .article-img {
+        width: 200px;
+        height: auto;
+        text-align: center;
+      }
+      .image-container {
+        text-align: center;
+      }
+      .article-title {
+        text-align: center;
+        font-family: "Times";
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-header">
+        <h1 class="page-title"><div>Hindustan Times</div></h1>
+      </header>
+      <ul class="nav-links">
+        <li class="site-section">
+          <a class="section-link" href="#">Politics</a>
+        </li>
+        <li class="site-section">
+          <a class="section-link" href="#">Technology</a>
+        </li>
+        <li class="site-section">
+          <a class="section-link" href="#">Fashion</a>
+        </li>
+        <li class="site-section">
+          <a class="section-link" href="#">Sports</a>
+        </li>
+        <li class="site-section">
+          <a class="section-link" href="#">Local</a>
+        </li>
+      </ul>
+      <article class="story story-1">
+        <h2 class="article-title">Delhi Girl Creates History</h2>
+        <p class="article-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, omnis
+          minus ut sint at dolore aperiam tenetur accusantium? Fuga, corporis
+          harum? Enim, voluptas quisquam dignissimos dolorem laboriosam,
+          nostrum, porro voluptatem non veniam possimus ad illo odit placeat
+          consectetur nam asperiores quidem esse? Ratione id voluptatibus
+          officia tenetur repellat laborum? Doloremque.
+        </p>
+      </article>
+      <article class="story story-2">
+        <h2 class="article-title">I love Dogs</h2>
+        <div class="image-container">
+          <img class="article-img" src=
+          https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg />
+        </div>
+        <p class="article-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, omnis
+          minus ut sint at dolore aperiam tenetur accusantium? Fuga, corporis
+          harum? Enim, voluptas quisquam dignissimos dolorem laboriosam,
+          nostrum, porro voluptatem non veniam possimus ad illo odit placeat
+          consectetur nam asperiores quidem esse? Ratione id voluptatibus
+          officia tenetur repellat laborum? Doloremque.
+        </p>
+      </article>
+
+      <article class="story story-3">
+        <h2 class="article-title">CSS is apparantly a thing</h2>
+        <p class="article-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, omnis
+          minus ut sint at dolore aperiam tenetur accusantium? Fuga, corporis
+          harum? Enim, voluptas quisquam dignissimos dolorem laboriosam,
+          nostrum, porro voluptatem non veniam possimus ad illo odit placeat
+          consectetur nam asperiores quidem esse? Ratione id voluptatibus
+          officia tenetur repellat laborum? Doloremque.
+        </p>
+        <p class="article-body">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa saepe
+          ab hic recusandae consequuntur veritatis quis unde fugiat fuga.
+          Corrupti! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Accusantium necessitatibus sunt cumque at nisi soluta ab sapiente quod
+          saepe voluptas?
+        </p>
+      </article>
+      <article class="story story-4">
+        <h2 class="article-title">NOWAYYYY</h2>
+        <p class="article-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, omnis
+          minus ut sint at dolore aperiam tenetur accusantium? Fuga, corporis
+          harum? Enim, voluptas quisquam dignissimos dolorem laboriosam,
+          nostrum, porro voluptatem non veniam possimus ad illo odit placeat
+          consectetur nam asperiores quidem esse? Ratione id voluptatibus
+          officia tenetur repellat laborum? Doloremque.
+        </p>
+        <p class="article-body">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa saepe
+          ab hic recusandae consequuntur veritatis quis unde fugiat fuga.
+          Corrupti! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Accusantium necessitatibus sunt cumque at nisi soluta ab sapiente quod
+          saepe voluptas?Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. In nobis quas blanditiis temporibus accusamus eius cumque
+          molestiae nihil, voluptatibus doloremque reprehenderit debitis fuga,
+          harum ducimus iste tenetur? Corrupti earum quos numquam maiores. Esse
+          nostrum itaque tempora inventore modi eum fugiat.
+        </p>
+      </article>
+
+      <article class="story story-5">
+        <h2 class="article-title">LASTT</h2>
+        <p class="article-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, omnis
+          minus ut sint at dolore aperiam tenetur accusantium? Fuga, corporis
+          harum? Enim, voluptas quisquam dignissimos dolorem laboriosam,
+          nostrum, porro voluptatem non veniam possimus ad illo odit placeat
+          consectetur nam asperiores quidem esse? Ratione id voluptatibus
+          officia tenetur repellat laborum? Doloremque.
+        </p>
+        <p class="article-body">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa saepe
+          ab hic recusandae consequuntur veritatis quis unde fugiat fuga.
+          Corrupti! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Accusantium necessitatibus sunt cumque at nisi soluta ab sapiente quod
+          saepe voluptas?
+        </p>
+        <p class="article-body">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa saepe
+          ab hic recusandae consequuntur veritatis quis unde fugiat fuga.
+          Corrupti! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Accusantium necessitatibus sunt cumque at nisi soluta ab sapiente quod
+          saepe voluptas?
+        </p>
+      </article>
+    </div>
+  </body>
+</html>
